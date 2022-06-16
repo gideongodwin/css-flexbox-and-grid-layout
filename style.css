@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 95%);
+  color: #fff;
+}
+
+/* NAVBAR */
+
+nav {
+  width: 100%;
+  background: #493240;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+nav a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* BUTTONS */
+
+button {
+  background: none;
+  border: none;
+  margin-top: 50px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: hsl(0, 0%, 95%);
+  font: bold 0.9rem "Lexend Deca", sans-serif;
+}
+
+.btn:hover {
+  font-weight: lighter;
+  background: none;
+  color: #fff;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 20px;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+/* MAIN CONTENT */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem;
+  height: 100vh;
+}
+
+.header-text {
+  font: bold 2rem "Big Shoulders Display", sans-serif;
+  margin-top: 25px;
+  color: hsl(0, 0%, 95%);
+}
+
+.bottom-text {
+  font: lighter 15px "Lexend Deca", sans-serif;
+  margin: 25px 0px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+section {
+  padding: 50px;
+}
+
+.sedan {
+  background: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.suv {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  main {
+    display: block;
+    padding: 2rem;
+  }
+
+  main section {
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+}
